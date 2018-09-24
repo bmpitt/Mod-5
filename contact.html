@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>BPitt Website</title>
+
+	<script language = "JavaScript">
+		function submitForm() {
+
+			var firstName=document.userInfo.firstBox.value;
+			if (userInfo.firstBox.value == "") {
+			alert("Please enter your first name.")
+			return false;
+			}
+			//DONE
+			var lastName=document.userInfo.lastBox.value;
+			if (userInfo.lastBox.value == "") {
+			alert("Please enter your last name.")
+			return false;
+			}
+
+			var email=document.userInfo.mailBox.value;
+			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(userInfo.mailBox.value)) {
+			return (true);
+			}
+			alert("You have entered an invalid email address!");
+			return (false);
+
+			var phoneNum=document.userInfo.phoneBox.value;
+
+		}
+
+	</script>
+
+	<style type="text/css" media="all">
+	@import "layout.css";
+	</style>
+
+</head>
+
+<body>
+
+	<div id="Header"><h1>Gentle Dental Care</h1></div>
+
+	<div id="Content">
+
+		<form name = "userInfo">
+
+			<strong>First Name:</strong>
+			<input type="text" name="firstBox"><br>
+
+			<strong>Last Name:</strong>
+			<input type="text" name="lastBox"><br>
+
+			<strong>Email:</strong>
+			<input type="text" name="mailBox">
+			(name@domain.com)<br>
+
+			<strong>Phone Number:</strong>
+			<input type="tel" name="phoneBox">
+			(Optional. XXX-XXX-XXXX)<br><br>
+
+			<textarea name = "story" rows="20" cols="80" wrap>
+			</textarea><br>
+
+			<input type = "submit" value = "Submit" onmouseover = "submitForm()" onClick = "window.open('thankYou.html')">
+
+			<input type="reset" value="Reset">
+
+		</form>
+
+	</div>
+
+	<div id="Menu">
+		<h1>Menu</h1>
+		<a href="socialMedia.html">Social Media</a><br>
+		<a href="services.html">Services</a><br>
+		<a href="ourPromise.html">Our Promise</a><br>
+		<a href="staff.html">Staff Info</a><br>
+		<a href="contact.html">Contact Us</a><br>
+		<a href="payment.html">Payment Options</a><br>
+		<a href="FAQ.html">FAQ</a><br>
+		<a href="testimonial.html">Testimonials</a><br><br>
+		<a href="index.php">Home</a>
+
+	</div>
+</body>
+</html>

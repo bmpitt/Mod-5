@@ -1,0 +1,67 @@
+html {
+	background-image: url("images/dentalBackgrnd.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	font:11px verdana, arial, helvetica, sans-serif;
+}
+
+
+#Header {
+	margin:50px 0px 10px 0px;
+	padding:17px 0px 0px 20px;
+	border:3px groove #000000;
+	background-color:#DCDCDC;
+	opacity: .8;
+}
+
+#Content {
+	margin:0px 50px 50px 200px;
+	padding:10px;
+	border:3px groove #000000;
+	background-color: #DCDCDC;
+	opacity: .7;
+	line-height: 2;
+
+}
+
+#Menu {
+	position:absolute;
+	top:139px;
+	left:20px;
+	width:150px;
+	padding:10px;
+	background-color:#DCDCDC;
+	border:3px groove #000000;
+	opacity: .8;
+	font-weight:bold;
+	text-align: center;
+}
+
+p {
+	text-indent: 25px;
+}
+
+h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+span.upperCase {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#imageRight {
+	float:right;
+}
+
+h3 {
+	text-align:center;
+	text-transform:uppercase;
+}
